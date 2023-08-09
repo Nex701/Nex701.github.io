@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f3216334be.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Jr Software Developer</p>
+            <h1>Hi, I'm <span>Ryan O'Neill</span><br> From Northern Ireland</h1>
+        </div>
+    </div>
+</div>
+
+<!----------Languages-----------> 
+<div id="languages">
+    <div class="container">
+        <h1 class="sub-title">Languages</h1>
+        <div class="languages-list">
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java</h2>
+                <p>Java is definatly my strongest language at the moment however I am always expanding my knowledge and experimenting with others.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-square-js"></i>
+                <h2>JavaScript</h2>
+                <p></p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>HTML/CSS</h2>
+                <p></p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/PracticalApps.PNG">
+                <div class="layer">
+                    <h3>Practical Applications</h3>
+                    <p></p>
+                        <a href="https://github.com/Nex701/Calculator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/2DJavaGame.PNG">
+                <div class="layer">
+                    <h3>2D Java RPG</h3>
+                    <p></p>
+                        <a href="https://github.com/Nex701/2DJavaGame"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Games.PNG">
+                <div class="layer">
+                    <h3>Games</h3>
+                    <p></p>
+                        <a href="https://github.com/Nex701/TicTacToe"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----------about--------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/image.PNG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi I'm Ryan (26), I've been self learning the fundamentals of all things programming for 2 Years now and in 2022 began my BSc (Honours) Computing 
+                    and IT course at Open University. I've recently began putting my knowledge to work and creating my first applications and websites.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Open University BSc (Honours) Computing and IT</li>
+                            <li><span>2014 - 2016</span><br>BTEC Level 3 Extended Diploma in creative media production</li>
+                            <li><span>2008 - 2014</span><br>Lismore Comprehensive 7x GCSEs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Technical proficiency and problem-solving abilities</span><br>Adaptive Solutions: Developed innovative solutions to unexpected technical challenges</li>
+                            <li><span>Time management and workload coordination in fast-paced environments</span><br>Managed multiple tasks concurrently by efficiently assessing importance, resulting in on-time project completion</li>
+                            <li><span>Self-directed IT studies and projects</span><br>Designed and executed independent IT projects, showcasing practical skills and dedication to continuous improvement</li>
+                            <li><span>Customer service and communication</span><br>Delivered exceptional customer service by actively listening to concerns, addressing issues, and ensuring client satisfaction</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Open University bsc (Honours) Computing and IT</li>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!------------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>ryanoneill70@yahoo.co.uk</p>
+                <p><i class="fa-solid fa-phone"></i>07739080505</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/ryan-o-neill-510965260/"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://github.com/Nex701"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/RyanO'Neill-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ryan O'Neill</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwFU7FW9lRRF0raqSUrs8HMEVdiA3S8s_uTp19cTLZyy9_AMOLeOFvlUL33PKS5wVqb/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
