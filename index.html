@@ -40,20 +40,22 @@
                 <i class="fa-brands fa-java"></i>
                 <h2>Java</h2>
                 <p>Java is definatly my strongest language at the moment however I am always expanding my knowledge and experimenting with others.</p>
-                <a href="#">Learn more</a>
+                <a href="javascript:void();">Learn more</a>
             </div>
             <div>
                 <i class="fa-brands fa-square-js"></i>
-                <h2>JavaScript</h2>
+                <i class="fa-brands fa-angular"></i>
+                <h2>JavaScript / Typescript</h2>
+                <h2>Angular framework</h2>
                 <p></p>
-                <a href="#">Learn more</a>
+                <a href="javascript:void();">Learn more</a>
             </div>
             <div>
                 <i class="fa-brands fa-html5"></i>
                 <i class="fa-brands fa-css3-alt"></i>
                 <h2>HTML/CSS</h2>
                 <p></p>
-                <a href="#">Learn more</a>
+                <a href="javascript:void();">Learn more</a>
             </div>
         </div>
     </div>
@@ -64,11 +66,13 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/PracticalApps.PNG">
+                <video autoplay muted controls loop>
+                    <source src="images/Todo-list1.mp4" type="video/mp4">
+                    </video>
                 <div class="layer">
-                    <h3>Practical Applications</h3>
+                    <h3>Angular Application</h3>
                     <p></p>
-                        <a href="https://github.com/Nex701/Calculator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -87,8 +91,18 @@
                         <a href="https://github.com/Nex701/TicTacToe"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
+            <span class="see-more">
+            <div class="work">
+                <img src="images/PracticalApps.PNG">
+                <div class="layer">
+                    <h3>Practical Applications</h3>
+                    <p></p>
+                        <a href="https://github.com/Nex701/Calculator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            </span>
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="javascript:void();" class="btn">See more</a>
     </div>
 </div>
 <!----------about--------->
@@ -186,6 +200,17 @@
 
 <script>
 
+    const seeMorebtn = document.querySelector('.btn');
+    const work = document.querySelector('.work-list');
+
+    seeMorebtn.addEventListener('click',(e)=>{
+        work.classList.toggle('display')
+    })
+
+</script>
+
+<script>
+
     var sidemenu = document.getElementById("sidemenu");
     
     function openmenu(){
@@ -195,6 +220,27 @@
         sidemenu.style.right = "-200px";
     }
 
+</script>
+
+<script>
+
+function toggleMute() {
+
+    var video=document.getElementById("images/Todo-list1.mp4");
+  
+    if(video.muted){
+      video.muted = false;
+    } else {
+      debugger;
+      video.muted = true;
+      video.play()
+    }
+  }
+</script>
+<script>
+  $(document).ready(function(){
+    setTimeout(toggleMute,3000);
+  })
 </script>
 
 <script>
